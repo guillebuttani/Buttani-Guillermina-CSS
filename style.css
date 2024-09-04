@@ -1,0 +1,208 @@
+.todo {
+    background-color: rgb(221, 221, 234);
+
+}.Cabecera {
+    font-size: medium;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(76, 73, 73);
+    line-height: 60px;
+  
+}
+.caja {
+
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 2%;
+    padding-right: 20px;
+    padding-bottom: 2%;
+    width: 1250px;
+    
+    
+
+}
+.Subtitulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: rgb(30, 30, 30);
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+.linea {
+    background-color: rgba(64, 64, 64, 0.892);
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.p1 {
+    text-decoration: underline 1px;
+}
+.Homero {
+    color: rgb(112, 107, 107);
+    background-color: rgb(231, 225, 219);
+    line-height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-left: 25px;
+    font-style: italic;
+    border-left: 5px solid grey;
+    margin-bottom: 20px;
+
+}
+
+.box1 {
+    background-color: azure;
+    border: 2px solid black;
+    padding-left: 20px;
+    box-shadow: 3px 3px 15px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.p2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box2 {
+    background-color: bisque;
+    border: 3px solid black;
+    padding-left: 20px;
+    box-shadow: 3px 3px 15px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+   
+}
+
+.box3 {
+    position: relative;
+    background-color: rgba(139, 241, 255, 0.473);
+    line-height: 50px;
+    padding-left: 12px; 
+    margin-bottom: 30px;
+
+}
+
+.absoluto {
+    background-color: rgb(5, 90, 90);
+    padding-left: 20px;
+    position: absolute;
+    left: 54% ;
+    top: 50%;
+    line-height: 20px;
+    right: 1%;
+    border-radius: 5px;
+}
+
+.p3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+.p4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: ;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgb(86, 141, 224);
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+
+@media (max-width: 768px) {
+    .todo {
+        background-color: rgb(175, 198, 211);
+    }
+
+    .Cabecera {
+        font-size: 15px; 
+        line-height: 60px; 
+    }
+
+    .caja {
+        width: 90%; 
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+   
+    .Subtitulo {
+        font-size: small; 
+    }
+
+    .p1, .p2{
+        font-size: 14px; 
+    }
+
+    .box3 {
+        position: relative;
+        
+    
+    }
+    .absoluto {
+        position: absolute;
+        margin-top: 10px;
+        
+        left: 55%;
+        
+
+    }
+    .p4, .p3{
+        font-size: 10px; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+}
+
+
+..box4 {
+    display: grid;
+    justify-content: center
+    padding: 50px;
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(278, 62%, 49%);
+    transition: background-color 0.3s ease; 
+    margin-bottom: 10px;
+}
+
+.animacion:hover {
+    background-color: hsl(133, 100%, 20%); 
+}
+
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 100%, 57%);
+    animation: mover 5s linear infinite; 
+    border-radius: 100%;
+    margin-top: 10px;
+   
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(100vw); 
+    }
+}
